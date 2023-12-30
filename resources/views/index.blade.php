@@ -12,7 +12,7 @@
         <p>LIVE YOUR LIFE</p>
         <span>CS AUTO DEALER RECRUIT</span>
         <p>挑戦の先にしか、</p>
-        <p>辿り着けない未来がある</p>
+        <p>たどり着けない未来がある</p>
       </div>
     </div>
     <section class="main-txt">
