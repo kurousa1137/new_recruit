@@ -15,5 +15,8 @@ use App\Http\Controllers\ViewController;
 */
 
 Route::controller(ViewController::class)->group(function(){
+  //トップページ
   Route::get('/', 'home')->name('home');
+  //職種詳細
+  Route::get('/detail/{id}', 'detail')->name('detail');
 });

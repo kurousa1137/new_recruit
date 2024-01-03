@@ -19,7 +19,7 @@
 <body>
   <header>
     <div class="l-header">
-      <h1><img src="{{ asset('img/common/logo.svg') }}" alt="CSオートディーラー"></h1>
+      <h1><a href="{{ route('home') }}"><img src="{{ asset('img/common/logo.svg') }}" alt="CSオートディーラー"></a></h1>
     </div>
   </header>
   <main>

@@ -8,6 +8,7 @@ export default defineConfig({
               'resources/scss/common/header.scss',
               'resources/scss/common/fotter.scss',
               'resources/scss/index.scss',
+              'resources/scss/detail.scss',
             ],
             refresh: true,
         }),
