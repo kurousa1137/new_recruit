@@ -48,6 +48,6 @@
         <td>ここにテキストが入ります。</td>
       </tr>
     </table>
-    <a href="" class="entry-btn">ENTRY</a>
+    <a href="{{ route('form') }}" class="entry-btn">ENTRY</a>
   </div>
 @endsection

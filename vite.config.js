@@ -9,6 +9,8 @@ export default defineConfig({
               'resources/scss/common/fotter.scss',
               'resources/scss/index.scss',
               'resources/scss/detail.scss',
+              'resources/scss/form.scss',
+              'resources/js/form.js',
             ],
             refresh: true,
         }),

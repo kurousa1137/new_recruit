@@ -14,7 +14,19 @@ class ViewController extends Controller
     return view('index');
   }
 
+  /**
+   * @return view
+   * 職種詳細
+   */
   public function detail(){
     return view('detail');
+  }
+
+  /**
+   * @return view
+   * エントリーフォーム
+   */
+  public function form(){
+    return view('form');
   }
 }

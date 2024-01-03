@@ -19,4 +19,6 @@ Route::controller(ViewController::class)->group(function(){
   Route::get('/', 'home')->name('home');
   //職種詳細
   Route::get('/detail/{id}', 'detail')->name('detail');
+  //エントリーフォーム
+  Route::get('/form', 'form')->name('form');
 });
