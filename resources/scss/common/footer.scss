@@ -9,12 +9,27 @@ footer{
     align-items: center;
     justify-content: space-between;
 
+    @include sp{
+      padding: px(30) px(80) px(30) px(10);
+      display: block;
+      box-sizing: border-box;
+    }
+
     img{
       width: 140px;
+
+      @include sp{
+        width: px(140);
+      }
     }
 
     ul{
       display: flex;
+      flex-flow: row wrap;
+
+      @include sp{
+        margin-top: px(25);
+      }
 
       li{
         a{
@@ -24,6 +39,10 @@ footer{
           display: flex;
           align-items: center;
           transition: .3s;
+
+          @include sp{
+            font-size: px(14);
+          }
 
           &:before{
             content: "\e89e";
@@ -42,6 +61,22 @@ footer{
 
         +li{
           margin-left: 15px;
+
+          @include sp{
+            margin-left: px(30);
+          }
+        }
+
+        &:nth-of-type(2n-1){
+          @include sp{
+            margin-left: 0;
+          }
+        }
+
+        &:nth-of-type(n+3){
+          @include sp{
+            margin-top: px(15);
+          }
         }
       }
     }
@@ -52,6 +87,12 @@ footer{
       margin-top: 20px;
       display: block;
       text-align: right;
+
+      @include sp{
+        text-align: left;
+        font-size: px(12);
+        margin-top: px(30);
+      }
     }
   }
 }

@@ -7,7 +7,14 @@
 @section('content')
   <div class="l-main">
     <div class="main-visual">
-      <img src="{{ asset('img/top/main_visual.webp') }}" alt="">
+      <picture>
+        <source media="(min-width:769px)" srcset=""{{ asset('img/main_visual/webp') }}>
+        <img src="{{ asset('img/top/main_visual_sp.webp') }}" alt="">
+      </picture>
+      <div class="ttl-sp">
+        <p>挑戦の先にしか、</p>
+        <p>たどり着けない未来がある</p>
+      </div>
       <div class="main-ttl">
         <p>LIVE YOUR LIFE</p>
         <span>CS AUTO DEALER RECRUIT</span>
@@ -42,7 +49,7 @@
     <section class="l-works">
       <div class="container">
         <h2>WORKS</h2>
-        <p>CSオートディーラーでは営業職から専門職までさまざまな職種を募集しています</p>
+        <p>CSオートディーラーでは営業職から<br>専門職までさまざまな職種を募集しています</p>
         <ul>
           <li>
             <a href="">
@@ -77,7 +84,7 @@
           <li>
             <a href="">
               <img src="{{ asset('img/top/icon06.svg') }}" alt="営業">
-              <p>洗車 / 軽作業</p>
+              <p>洗車/軽作業</p>
             </a>
           </li>
         </ul>

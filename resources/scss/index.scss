@@ -6,6 +6,10 @@
   position: relative;
   z-index: 999;
 
+  @include sp{
+    width: 100%;
+  }
+
   &:before{
     content: "";
     display: block;
@@ -20,6 +24,10 @@
     transform-origin: 50% 50%;
     animation: rote01 20s infinite 0s linear;
     z-index: -999;
+
+    @include sp{
+      display: none;
+    }
 
     @keyframes rote01{
       from{
@@ -46,6 +54,10 @@
     z-index: -999;
     animation: rote02 20s infinite 0s linear;
 
+    @include sp{
+      display: none;
+    }
+
     @keyframes rote02{
       from{
         transform: rotate(360deg);
@@ -56,10 +68,41 @@
     }
   }
 
-  > img{
-    width: 945px;
-    margin-left: auto;
+  > picture{
+    > img{
+      width: 945px;
+      margin-left: auto;
+  
+      @include sp{
+        width: 94.93%;
+      }
+    }
   }
+
+  .ttl-sp{
+    display: none;
+
+    @include sp{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: px(127) 0 0 px(30);
+    }
+    
+    p{
+      font-weight: bold;
+      font-size: px(20);
+      background: #fff;
+      width: fit-content;
+      padding: 10px;
+      
+      &:nth-of-type(2){
+        margin-top: px(10);
+      }
+    }
+  }
+
 
   .main-ttl{
     width: 790px;
@@ -69,14 +112,25 @@
     top: 0;
     left: 0;
     margin-top: 50px;
-    padding: 77px 100px 0 80px;
+    padding: 77px 0 0 80px;
     box-sizing: border-box;
 
+    @include sp{
+      width: 94.93%;
+      padding: px(36) 0 px(30) px(20);
+      margin-top: px(232);
+      height: px(169);
+    }
+    
     p{
       &:nth-of-type(1){
         font-weight: bold;
         font-family: var(--jost);
         font-size: 80px;
+
+        @include sp{
+          font-size: px(38);
+        }
   
         &:after{
           content: "";
@@ -85,6 +139,12 @@
           height: 8px;
           background: #333;
           margin: 30px 0;
+
+          @include sp{
+            width: px(35);
+            height: px(4);
+            margin: px(20) 0;
+          }
         }
       }
 
@@ -94,6 +154,10 @@
         font-size: 40px;
         width: fit-content;
         padding: 11px 7px;
+
+        @include sp{
+          display: none;
+        }
       }
 
       &:nth-of-type(2){
@@ -133,6 +197,10 @@
       display: block;
       font-weight: bold;
       font-size: 22px;
+
+      @include sp{
+        font-size: px(20);
+      }
     }
   }
 }
@@ -140,22 +208,51 @@
 .main-txt{
   margin-top: 40px;
 
+  @include sp{
+    margin: px(190) auto 0;
+    width: 100%;
+  }
+
   h2{
     font-weight: bold;
     font-size: 35px;
     text-align: center;
+
+    @include sp{
+      font-size: px(26);
+    }
   }
 
   p{
     text-align: center;
     margin-top: 24px;
     line-height: 1.8;
+
+    @include sp{
+      font-size: px(16);
+      text-align: left;
+      text-align: justify;
+      width: 95%;
+      margin: px(20) auto 0;
+    }
+
+    br{
+      display: block;
+
+      @include sp{
+        display: none;
+      }
+    }
   }
 
   .slider{
     display: flex;
     overflow: hidden;
     margin-top: 100px;
+
+    @include sp{
+      margin-top: px(50);
+    }
     
     ul{
       display: flex;
@@ -173,6 +270,10 @@
       li{
         width: calc(100vw / 6);
         display: block;
+
+        @include sp{
+          width: calc(100vw / 2);
+        }
         
         img{
           width: 100%;  
@@ -187,6 +288,11 @@
   margin-top: 100px;
   background: #F8F8F8;
   padding: 80px 0;
+
+  @include sp{
+    margin-top: px(30);
+    padding: px(50) 0;
+  }
   
   .container{
     background: #fff;
@@ -194,6 +300,12 @@
     padding: 107px 0 80px;
     width: 1000px;
     margin: 0 auto;
+
+    @include sp{
+      width: 95%;
+      padding: px(71) px(9);
+      box-sizing: border-box;
+    }
 
     h2{
       font-size: 55px;
@@ -204,6 +316,11 @@
       left: 50%;
       margin-top: -25px;
       transform: translateX(-50%);
+
+      @include sp{
+        font-size: px(40);
+        margin-top: px(-20);
+      }
 
       &:after{
         content: "職種紹介";
@@ -216,6 +333,13 @@
         margin: 18px auto 0;
         background: linear-gradient(to right, #4DD4FF, #E64DFF);
         color: #fff;
+
+        @include sp{
+          font-size: px(18);
+          width: px(102);
+          height: px(28);
+          margin-top: px(14);
+        }
       }
     }
 
@@ -225,6 +349,22 @@
       padding: 12px 25px;
       margin: 0 auto;
 
+      @include sp{
+        padding: px(10) px(15);
+        line-height: 1.3;
+        text-align: center;
+        margin-top: px(14);
+        font-size: px(14);
+      }
+
+      br{
+        display: none;
+
+        @include sp{
+          display: block;
+        }
+      }
+
       &:before, &:after{
         content: "";
         display: block;
@@ -232,9 +372,12 @@
         height: 100%;
         border: solid 1px #707070;
         box-sizing: border-box;
-        margin-right: 10px;
         position: absolute;
         top: 0;
+
+        @include sp{
+          width: px(5);
+        }
         
       }
       
@@ -255,6 +398,11 @@
       display: flex;
       flex-flow: row wrap;
 
+      @include sp{
+        width: 100%;
+        margin-top: px(25);
+      }
+
       li{
         width: calc(100%/3);
 
@@ -267,6 +415,10 @@
             margin: 0 auto;
             width: auto;
             height: 60px;
+
+            @include sp{
+              height: px(50);
+            }
           }
 
           p{
@@ -278,6 +430,11 @@
             justify-content: center;
             margin-top: 10px;
 
+            @include sp{
+              font-size: px(14);
+              margin-top: px(8);
+            }
+
             &:after{
               content: "\eaaa";
               display: block;
@@ -286,6 +443,11 @@
               margin-left: 10px;
               font-variation-settings: 'wght' 200;
               color: #333;
+
+              @include sp{
+                font-size: px(26);
+                margin-left: px(5);
+              }
             }
           }
 

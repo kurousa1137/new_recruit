@@ -1,7 +1,7 @@
 @extends('common.layout')
 @section('title', '募集要項 - CSオートディーラー')
 @section('style')
-  @VITE(['resources/scss/detail.scss'])
+  @vite(['resources/scss/detail.scss'])
 @endsection
 
 @section('content')

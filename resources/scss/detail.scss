@@ -9,12 +9,24 @@
   justify-content: center;
   flex-direction: column;
 
+  @include sp{
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: px(10);
+    height: px(150);
+    box-sizing: border-box;
+  }
+
   h2{
     font-weight: bold;
     font-size: 28px;
     background: #fff;
     text-align: center;
     padding: 11px 7px;
+
+    @include sp{
+      font-size: px(18);
+    }
   }
   
   span{
@@ -25,12 +37,21 @@
     background: #fff;
     width: fit-content;
     padding: 11px 7px;
+
+    @include sp{
+      font-size: px(18);
+    }
   }
 }
 
 table{
   width: 1000px;
   margin: 50px auto 0;
+
+  @include sp{
+    margin-top: px(30);
+    width: 95%;
+  }
   
   tr{
     border-top: solid 1px #ddd;
@@ -42,12 +63,24 @@ table{
       padding: 15px 30px;
       width: 150px;
       box-sizing: border-box;
+
+      @include sp{
+        width: px(100);
+        font-size: px(15);
+        padding: px(15) 0;
+      }
     }
     
     td{
       width: 850px;
       padding: 15px 30px;
       box-sizing: border-box;
+      
+      @include sp{
+        width: px(256);
+        font-size: px(14);
+        padding: px(15) 0;
+      }
     }
 
     &:last-child{
@@ -72,6 +105,14 @@ table{
   border-radius: 5px;
   margin: 50px auto 100px;
   transition: .3s;
+
+  @include sp{
+    width: px(277);
+    height: px(60);
+    font-size: px(18);
+    border-radius: px(5);
+    margin: px(50) auto;
+  }
 
   &:hover{
     opacity: .8;
