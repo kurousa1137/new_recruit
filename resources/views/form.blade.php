@@ -57,12 +57,12 @@
         </select>
         <span>希望職種</span>
       </div>
-      <div class="file-area">
+      <div class="rirekisho-area">
         <input type="file" name="rirekisho" id="rirekisho">
         <label for="rirekisho">履歴書/ファイルを選択してください</label>
         <p>選択されていません</p>
       </div>
-      <div class="file-area">
+      <div class="shokumukeirekisho-area">
         <input type="file" name="shokumukeirekisho" id="shokumukeirekisho">
         <label for="shokumukeirekisho">職務経歴書/ファイルを選択してください</label>
         <p>選択されていません</p>
