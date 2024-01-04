@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\EntryRequest;
+use App\Mail\ShopMail;
+use App\Mail\UserMail;
 
 class ViewController extends Controller
 {
@@ -36,7 +38,15 @@ class ViewController extends Controller
    * エントリーフォーム送信処理
    */
   public function send(EntryRequest $request){
-    dd($request->all());
+    $list = [
+      'd-sugimoto@csauto.jp',
+    ];
+
+    Mail::to($list)
+      ->send(new ShopMail($request));
+
+    Mail::to($request->email)
+      ->send(new UserMail($request));
   }
 
   /**
