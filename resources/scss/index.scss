@@ -26,7 +26,9 @@
     z-index: -999;
 
     @include sp{
-      display: none;
+      width: px(250);
+      height: px(180);
+      margin: 0 0 px(-120) px(-80);
     }
 
     @keyframes rote01{
@@ -55,7 +57,9 @@
     animation: rote02 20s infinite 0s linear;
 
     @include sp{
-      display: none;
+      width: px(140);
+      height: px(100);
+      margin: px(280) px(-60) 0;
     }
 
     @keyframes rote02{
