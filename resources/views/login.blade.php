@@ -1,7 +1,7 @@
 @extends('admin.common.layout')
 @section('title', 'ログイン画面')
 @section('style')
-  @vite(['resources/scss/admin/login.scss'])
+  @vite(['resources/scss/login.scss'])
 @endsection
 
 @section('content')

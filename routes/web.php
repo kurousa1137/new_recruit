@@ -30,5 +30,15 @@ Route::controller(AdminController::class)->prefix('admin')->group(function(){
   /*-------------------------------------
   管理者のみアクセス可能
   -------------------------------------*/
+
+  //職種一覧画面
   Route::get('/list', 'list')->name('list');
+  //新規作成画面
+  Route::get('/create', 'create')->name('create');
+  //新規作成処理
+  Route::post('/store', 'store')->name('store');
+  //記事編集画面
+  Route::get('/edit/{id}', 'edit')->name('edit');
+  //記事削除処理
+  Route::post('/delete', 'delete')->name('delete');
 });

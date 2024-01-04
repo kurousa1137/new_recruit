@@ -35,6 +35,6 @@ class ViewController extends Controller
    * ログイン画面
    */
   public function login(){
-    return view('admin.login');
+    return view('login');
   }
 }

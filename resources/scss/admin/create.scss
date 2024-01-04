@@ -1,0 +1,97 @@
+@use '../common/mixin' as *;
+
+.l-main{
+  width: 900px;
+  margin: 50px auto 0;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 26px;
+}
+
+form{
+  margin-top: 30px;
+
+  dl{
+    dt{
+      color: #6D7D93;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    dd{
+      margin-top: 5px;
+
+      input{
+        width: 100%;
+        height: 55px;
+        border-radius: 5px;
+        border: solid 1px #DFDFDF;
+        box-sizing: border-box;
+        font-size: 16px;
+        padding: 0 20px;
+        
+        &:focus{
+          outline: none;
+        }
+      }
+      
+      textarea{
+        width: 100%;
+        height: 500px;
+        border-radius: 5px;
+        padding: 20px;
+        border: solid 1px #DFDFDF;
+        box-sizing: border-box;
+        resize: vertical;
+        font-size: 16px;
+        font-family: inherit;
+
+        &:focus{
+          outline: none;
+        }
+      }
+
+      > div{
+        width: 100%;
+        height: 55px;
+        position: relative;
+
+        select{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          appearance: none;
+          border: solid 1px #dfdfdf;
+          border-radius: 5px;
+          padding: 0 20px;
+          font-size: 16px;
+
+          &:focus{
+            outline: none;
+          }
+        }
+
+      }
+    }
+
+    &:nth-of-type(n+2){
+      margin-top: 30px;
+    }
+  }
+
+  .submit-btn{
+    background: #7F5BFE;
+    color: #fff;
+    border: none;
+    width: 290px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 50px 0;
+    font-weight: bold;
+  }
+}

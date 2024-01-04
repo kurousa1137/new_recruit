@@ -1,10 +1,16 @@
-@use '../common/mixin' as *; 
+@use 'common/mixin' as *; 
 
 body{
   background: #F8F8F8;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header{
+  form{
+    display: none;
+  }
 }
 
 .login-area{
