@@ -1,5 +1,13 @@
 $(function(){
 
+  //初期化
+  $('.text-area input').each(function(){
+    if($(this).val().length > 0){
+      $(this).next('span').addClass('active');
+    }
+  })
+
+  //フォーカス時に発火
   $('.text-area input').focus(function(){
     $(this).next('span').addClass('active');
   })

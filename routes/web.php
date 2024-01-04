@@ -22,6 +22,8 @@ Route::controller(ViewController::class)->group(function(){
   Route::get('/detail/{id}', 'detail')->name('detail');
   //エントリーフォーム
   Route::get('/form', 'form')->name('form');
+  //エントリーフォーム送信処理
+  Route::post('/send', 'send')->name('send');
   //ログイン画面
   Route::get('/csadmin', 'login')->name('login');
 });

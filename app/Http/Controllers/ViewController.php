@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\EntryRequest;
 
 class ViewController extends Controller
 {
@@ -29,6 +30,13 @@ class ViewController extends Controller
    */
   public function form(){
     return view('form');
+  }
+
+  /**
+   * エントリーフォーム送信処理
+   */
+  public function send(EntryRequest $request){
+
   }
 
   /**
