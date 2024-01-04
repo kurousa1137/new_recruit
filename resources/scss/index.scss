@@ -10,68 +10,6 @@
     width: 100%;
   }
 
-  &:before{
-    content: "";
-    display: block;
-    width: 339px;
-    height: 293px;
-    background: url(/public/img/common/triangle01.svg) no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 -200px 0 -300px;
-    transform-origin: 50% 50%;
-    animation: rote01 20s infinite 0s linear;
-    z-index: -999;
-
-    @include sp{
-      width: px(250);
-      height: px(180);
-      margin: 0 0 px(-120) px(-80);
-    }
-
-    @keyframes rote01{
-      from{
-        transform: rotate(0);
-      }
-      to{
-        transform: rotate(360deg);
-      }
-    }
-  }
-  
-  &:after{
-    content: "";
-    display: block;
-    width: 239px;
-    height: 193px;
-    background: url(/public/img/common/triangle02.svg) no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 100px -200px 0 0;
-    transform-origin: 50% 50%;
-    z-index: -999;
-    animation: rote02 20s infinite 0s linear;
-
-    @include sp{
-      width: px(140);
-      height: px(100);
-      margin: px(280) px(-60) 0;
-    }
-
-    @keyframes rote02{
-      from{
-        transform: rotate(360deg);
-      }
-      to{
-        transform: rotate(0);
-      }
-    }
-  }
-
   > picture{
     > img{
       width: 945px;
@@ -100,14 +38,17 @@
       background: #fff;
       width: fit-content;
       padding: 10px;
+      opacity: 0;
+      animation: ttl-animation01 .5s forwards .2s linear;
       
       &:nth-of-type(2){
         margin-top: px(10);
+        animation: ttl-animation02 .7s forwards .6s linear;
       }
     }
   }
-
-
+  
+  
   .main-ttl{
     width: 790px;
     height: 493px;
@@ -172,6 +113,10 @@
         @keyframes ttl-animation01 {
           from{
             transform: translateX(-100px);
+
+            @include sp{
+              transform: translateX(px(100));
+            }
           }
           to{
             transform: translateX(0);
