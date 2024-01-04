@@ -39,6 +39,8 @@ Route::controller(AdminController::class)->prefix('admin')->group(function(){
   Route::post('/store', 'store')->name('store');
   //記事編集画面
   Route::get('/edit/{id}', 'edit')->name('edit');
+  //記事更新処理画面
+  Route::post('/update', 'update')->name('update');
   //記事削除処理
   Route::post('/delete', 'delete')->name('delete');
 });

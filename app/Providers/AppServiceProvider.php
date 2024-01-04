@@ -7,6 +7,7 @@ use App\Services\ListService;
 use App\Services\StoreService;
 use App\Services\UpdateService;
 use App\Services\DeleteService;
+use App\Services\DetailService;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
       $this->app->bind('update', UpdateService::class);
       $this->app->bind('index', ListService::class);
       $this->app->bind('delete', DeleteService::class);
+      $this->app->bind('detail', DetailService::class);
     }
 
     /**

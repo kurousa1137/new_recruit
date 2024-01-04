@@ -23,6 +23,7 @@
     background: #fff;
     text-align: center;
     padding: 11px 7px;
+    min-width: 300px;
 
     @include sp{
       font-size: px(18);
@@ -75,6 +76,8 @@ table{
       width: 850px;
       padding: 15px 30px;
       box-sizing: border-box;
+      line-height: 1.5;
+      font-size: 14px;
       
       @include sp{
         width: px(256);

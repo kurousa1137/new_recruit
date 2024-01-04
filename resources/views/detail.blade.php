@@ -7,45 +7,45 @@
 @section('content')
   <div class="l-main">
     <div class="main-ttl">
-      <h2>営業 / カーライフアドバイザー</h2>
+      <h2>{{ $data->clm01 }}</h2>
       <span>募集要項</span>
     </div>
     <table>
       <tr>
         <th>仕事内容</th>
-        <td>ここにテキストが入ります。</td>
+        <td>{!! nl2br($data->clm02) !!}</td>
       </tr>
       <tr>
         <th>仕事の流れ</th>
-        <td>ここにテキストが入ります。</td>
+        <td>{!! nl2br($data->clm03) !!}</td>
       </tr>
       <tr>
         <th>応募条件</th>
-        <td>ここにテキストが入ります。</td>
+        <td>{!! nl2br($data->clm04) !!}</td>
       </tr>
       <tr>
         <th>雇用形態</th>
-        <td>正社員</td>
+        <td>{{($data->clm05) }}</td>
       </tr>
       <tr>
         <th>勤務地</th>
-        <td>ここにテキストが入ります。</td>
+        <td>{!! nl2br($data->clm06) !!}</td>
       </tr>
       <tr>
         <th>給与</th>
-        <td>ここにテキストが入ります。</td>
+        <td>{!! nl2br($data->clm07) !!}</td>
       </tr>
       <tr>
         <th>休日</th>
-        <td>完全週休2日制</td>
+        <td>{!! nl2br($data->clm08) !!}</td>
       </tr>
       <tr>
         <th>アクセス</th>
-        <td>ここにテキストが入ります。</td>
+        <td>{!! nl2br($data->clm09) !!}</td>
       </tr>
       <tr>
         <th>福利厚生</th>
-        <td>ここにテキストが入ります。</td>
+        <td>{!! nl2br($data->clm10) !!}</td>
       </tr>
     </table>
     <a href="{{ route('form') }}" class="entry-btn">ENTRY</a>

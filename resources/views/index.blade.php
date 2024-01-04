@@ -58,31 +58,31 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route('detail', ['id'=>2]) }}">
               <img src="{{ asset('img/top/icon02.svg') }}" alt="営業">
               <p>店長候補</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route('detail', ['id'=>3]) }}">
               <img src="{{ asset('img/top/icon03.svg') }}" alt="営業">
               <p>車両整備</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route('detail', ['id'=>4]) }}">
               <img src="{{ asset('img/top/icon04.svg') }}" alt="営業">
               <p>鈑金塗装</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route('detail', ['id'=>5]) }}">
               <img src="{{ asset('img/top/icon05.svg') }}" alt="営業">
               <p>商品管理</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route('detail', ['id'=>6]) }}">
               <img src="{{ asset('img/top/icon06.svg') }}" alt="営業">
               <p>洗車/軽作業</p>
             </a>

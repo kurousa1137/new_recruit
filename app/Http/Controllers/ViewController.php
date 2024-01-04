@@ -18,8 +18,9 @@ class ViewController extends Controller
    * @return view
    * 職種詳細
    */
-  public function detail(){
-    return view('detail');
+  public function detail($id){
+    $data = app()->make('detail')->get_job_data($id);
+    return view('detail', compact('data'));
   }
 
   /**
