@@ -29,4 +29,12 @@ class ViewController extends Controller
   public function form(){
     return view('form');
   }
+
+  /**
+   * @return view
+   * ログイン画面
+   */
+  public function login(){
+    return view('admin.login');
+  }
 }

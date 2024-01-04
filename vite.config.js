@@ -10,6 +10,8 @@ export default defineConfig({
               'resources/scss/index.scss',
               'resources/scss/detail.scss',
               'resources/scss/form.scss',
+              'resources/scss/admin/login.scss',
+              'resources/scss/admin/list.scss',
               'resources/js/form.js',
             ],
             refresh: true,

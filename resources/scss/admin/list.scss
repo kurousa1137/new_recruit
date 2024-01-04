@@ -1,0 +1,127 @@
+@use '../common/mixin' as *;
+
+form{
+  .logout-btn{
+    display: block;
+    border: none;
+    width: 224px;
+    height: 45px;
+    background: #7F5BFE;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: auto;
+    margin: 30px 30px 0 auto;
+    transition: .3s;
+
+    &:hover{
+      cursor: pointer;
+      opacity: .8;
+      transition: .3s;
+    }
+  }
+}
+
+.container{
+  width: 900px;
+  margin: 50px auto 0;
+  
+  h2{
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  > a{
+    width: 224px;
+    height: 45px;
+    text-decoration: none;
+    border: solid 1px #7F5BFE;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #7F5BFE;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: .3s;
+
+    &:before{
+      content: "\e147";
+      display: block;
+      font-family: var(--material);
+      font-size: 26px;
+      font-variation-settings: 'wght' 200;
+      margin-right: 5px;
+    }
+
+    &:hover{
+      transition: .3s;
+      background: #7F5BFE;
+      color: #fff;
+    }
+  }
+
+  table{
+    margin-top: 50px;
+
+    tr{
+      &:nth-of-type(1){
+        border-bottom: solid 1px #333;
+      }
+      
+      &:nth-of-type(n+2){
+        border-bottom: solid 1px #DFDFDF;
+      }
+      
+      th{
+        color: #6D7D93;
+        padding-bottom: 15px;
+        font-weight: bold;
+        
+        &:nth-of-type(1){
+          width: 700px;
+          text-align: left;
+        }
+        
+        &:nth-of-type(2), &:nth-of-type(3){
+          width: 100px;
+        }
+        
+      }
+      
+      td{
+        color: #6D7D93;
+        padding: 15px 0;
+
+        &:nth-of-type(2), &:nth-of-type(3){
+          text-align: center;
+        }
+
+        &:nth-of-type(3){
+          button{
+            background: #fff;
+            border: none;
+
+            &:hover{
+              cursor: pointer;
+            }
+          }
+
+          span{
+            font-size: 30px;
+            color: #7F5BFE;
+          }
+        }
+
+        > a{
+          display: block;
+          text-decoration: none;
+          color: #0071C1;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

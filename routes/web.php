@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,13 @@ Route::controller(ViewController::class)->group(function(){
   Route::get('/detail/{id}', 'detail')->name('detail');
   //エントリーフォーム
   Route::get('/form', 'form')->name('form');
+  //ログイン画面
+  Route::get('/csadmin', 'login')->name('login');
+});
+
+Route::controller(AdminController::class)->prefix('admin')->group(function(){
+  /*-------------------------------------
+  管理者のみアクセス可能
+  -------------------------------------*/
+  Route::get('/list', 'list')->name('list');
 });
