@@ -51,6 +51,11 @@ footer{
             font-size: 18px;
             margin-right: 5px;
             font-variation-settings: 'wght' 200;
+
+            @include sp{
+              margin-right: px(5);
+              font-size: px(16);
+            }
           }
 
           &:hover{
@@ -63,7 +68,7 @@ footer{
           margin-left: 15px;
 
           @include sp{
-            margin-left: px(30);
+            margin-left: px(16);
           }
         }
 

@@ -52,7 +52,7 @@
         <p>CSオートディーラーでは営業職から<br>専門職までさまざまな職種を募集しています</p>
         <ul>
           <li>
-            <a href="">
+            <a href="{{ route('detail', ['id'=>1]) }}">
               <img src="{{ asset('img/top/icon01.svg') }}" alt="営業">
               <p>営業</p>
             </a>

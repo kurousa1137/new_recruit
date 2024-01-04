@@ -22,11 +22,13 @@
         <span>フリガナ</span>
       </div>
       <div class="select-form">
-        <select name="gender">
-          <option value>選択してください</option>
-          <option value="">男</option>
-          <option value="">女</option>
-        </select>
+        <div>
+          <select name="gender">
+            <option value>選択してください</option>
+            <option value="">男</option>
+            <option value="">女</option>
+          </select>
+        </div>
         <span>性別</span>
       </div>
       <div class="text-area">
@@ -46,15 +48,17 @@
         <span>住所</span>
       </div>
       <div class="select-form">
-        <select name="job">
-          <option value>選択してください</option>
-          <option value="カーライフアドバイザー（営業）">カーライフアドバイザー（営業）</option>
-          <option value="店長候補">店長候補</option>
-          <option value="自動車整備士">自動車整備士</option>
-          <option value="鈑金塗装工">鈑金塗装工</option>
-          <option value="車両管理">車両管理</option>
-          <option value="洗車・軽作業（アルバイト）">洗車・軽作業（アルバイト）</option>
-        </select>
+        <div>
+          <select name="job">
+            <option value>選択してください</option>
+            <option value="カーライフアドバイザー（営業）">カーライフアドバイザー（営業）</option>
+            <option value="店長候補">店長候補</option>
+            <option value="自動車整備士">自動車整備士</option>
+            <option value="鈑金塗装工">鈑金塗装工</option>
+            <option value="車両管理">車両管理</option>
+            <option value="洗車・軽作業（アルバイト）">洗車・軽作業（アルバイト）</option>
+          </select>
+        </div>
         <span>希望職種</span>
       </div>
       <div class="rirekisho-area">
@@ -67,8 +71,8 @@
         <label for="shokumukeirekisho">職務経歴書/ファイルを選択してください</label>
         <p>選択されていません</p>
       </div>
-      <textarea name="" placeholder="面接希望日など"></textarea>
+      <textarea name="content" placeholder="面接希望日など"></textarea>
       <button class="submit-btn">送信</button>
-     </form>
+    </form>
   </div>
 @endsection
