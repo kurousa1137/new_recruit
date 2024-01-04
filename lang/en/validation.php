@@ -47,7 +47,7 @@ return [
     'distinct' => 'The :attribute field has a duplicate value.',
     'doesnt_end_with' => 'The :attribute may not end with one of the following: :values.',
     'doesnt_start_with' => 'The :attribute may not start with one of the following: :values.',
-    'email' => 'The :attribute must be a valid email address.',
+    'email' => 'メールアドレスの形式ではありません',
     'ends_with' => 'The :attribute must end with one of the following: :values.',
     'enum' => 'The selected :attribute is invalid.',
     'exists' => 'The selected :attribute is invalid.',
@@ -163,8 +163,11 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'age' => [
+            'digits_between' => '半角数字2文字でご入力ください',
+        ],
+        'tel' => [
+            'digits_between' => '電話番号の形式が正しくありません',
         ],
     ],
 

@@ -28,8 +28,8 @@ class EntryRequest extends FormRequest
           'kana' => 'required',
           'gender' => 'required',
           'email' => 'required | email',
-          'age' => 'required',
-          'tel' => 'required',
+          'age' => 'required | digits_between:2,2',
+          'tel' => 'required | digits_between:10,11',
           'address' => 'required',
           'job' => 'required',
         ];

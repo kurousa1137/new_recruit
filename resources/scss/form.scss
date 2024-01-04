@@ -281,10 +281,20 @@ form{
   font-size: 12px;
   transition: .3s;
   top: 15px;
+
+  @include sp{
+    font-size: px(12);
+    top: px(15);
+  }
 }
 
 .error-message{
   color: #e60000;
   font-size: 14px;
   margin-top: 10px;
+
+  @include sp{
+    font-size: px(14);
+    margin-top: px(10);
+  }
 }

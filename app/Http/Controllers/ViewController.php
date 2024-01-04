@@ -36,7 +36,7 @@ class ViewController extends Controller
    * エントリーフォーム送信処理
    */
   public function send(EntryRequest $request){
-
+    dd($request->all());
   }
 
   /**

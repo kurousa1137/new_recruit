@@ -56,10 +56,10 @@ table{
   
   tr{
     border-top: solid 1px #ddd;
-    font-size: 14px;
-
+    
     th{
       text-align: left;
+      font-size: 15px;
       font-weight: bold;
       padding: 15px 30px;
       width: 150px;
@@ -76,8 +76,8 @@ table{
       width: 850px;
       padding: 15px 30px;
       box-sizing: border-box;
-      line-height: 1.5;
-      font-size: 14px;
+      line-height: 2;
+      font-size: 15px;
       
       @include sp{
         width: px(256);
