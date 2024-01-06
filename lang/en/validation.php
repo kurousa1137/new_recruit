@@ -168,7 +168,7 @@ return [
         ],
 
         'tel' => [
-          'digits_between' => '電話番号の形式が正しくありません',
+          'digits_between' => '半角数字のみでご入力ください',
         ],
 
         'rirekisho' => [

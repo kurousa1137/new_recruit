@@ -48,6 +48,6 @@
         <td>{!! nl2br($data->clm10) !!}</td>
       </tr>
     </table>
-    <a href="{{ route('form') }}" class="entry-btn">ENTRY</a>
+    <a href="{{ route('form', ['job'=>$data->clm01]) }}" class="entry-btn">ENTRY</a>
   </div>
 @endsection

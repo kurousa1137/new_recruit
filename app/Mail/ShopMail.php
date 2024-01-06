@@ -62,11 +62,11 @@ class ShopMail extends Mailable
     public function attachments(): array
     {
         $list = [];
-        if(!empty($request->rirekisho)){
+        if(!empty($this->request['rirekisho'])){
           $rirekisho = Attachment::fromPath($this->request['rirekisho'])->as('履歴書.pdf')->withMime('application/pdf');
           array_push($list, $rirekisho);
         }
-        if(!empty($request->shokumukeirekisho)){
+        if(!empty($this->request['shokumukeirekisho'])){
           $shokumukeirekisho = Attachment::fromPath($this->request['shokumukeirekisho'])->as('職務経歴書.pdf')->withMime('application/pdf');
           array_push($list, $shokumukeirekisho);
         }
