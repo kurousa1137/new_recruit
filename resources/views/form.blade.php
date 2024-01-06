@@ -12,7 +12,7 @@
     <div class="main-ttl">
       <h2>エントリーフォーム</h2>
     </div>
-    <form action="{{ route('send') }}" method="POST">
+    <form action="{{ route('send') }}" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="text-area">
         <input type="text" name="username" value={{ old('username') }}>
@@ -99,11 +99,19 @@
         <label for="rirekisho">履歴書/ファイルを選択してください</label>
         <p>選択されていません</p>
       </div>
+      @error('rirekisho')
+        <p class="error-message">{{ $message }}</p>
+      @enderror
+
       <div class="shokumukeirekisho-area">
         <input type="file" name="shokumukeirekisho" id="shokumukeirekisho">
         <label for="shokumukeirekisho">職務経歴書/ファイルを選択してください</label>
         <p>選択されていません</p>
       </div>
+      @if($errors->has('shokumukeirekisho'))
+        <p class="error-message">{{ $errors->first('shokumukeirekisho') }}</p>
+      @endif
+
       <textarea name="content" placeholder="面接希望日など">{{ old('content') }}</textarea>
       <button class="submit-btn">送信</button>
     </form>

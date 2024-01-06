@@ -164,10 +164,19 @@ return [
 
     'custom' => [
         'age' => [
-            'digits_between' => '半角数字2文字でご入力ください',
+          'digits_between' => '半角数字2文字でご入力ください',
         ],
+
         'tel' => [
-            'digits_between' => '電話番号の形式が正しくありません',
+          'digits_between' => '電話番号の形式が正しくありません',
+        ],
+
+        'rirekisho' => [
+          'mimes' => '添付できるファイルはPDFファイルです',
+        ],
+
+        'shokumukeirekisho' => [
+          'mimes' => '添付できるファイルはPDFファイルです',
         ],
     ],
 

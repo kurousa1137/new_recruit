@@ -22,13 +22,13 @@ $(function(){
 
   //履歴書ファイル添付
   $(".rirekisho-area input").on("change", function() {
-    let e = $(this).prop("files")[0];
-    $(this).next().next("p").text(e.name)
+    let file = $(this).prop("files")[0];
+    $(this).next().next("p").text(file.name);
   })
 
   //職務経歴書ファイル添付
   $(".shokumukeirekisho-area input").on("change", function() {
-    let e = $(this).prop("files")[0];
-    $(this).next().next("p").text(e.name)
+    let file = $(this).prop("files")[0];
+    $(this).next().next("p").text(file.name);
   })
 });

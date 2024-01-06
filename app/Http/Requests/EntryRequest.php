@@ -23,15 +23,17 @@ class EntryRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-          'username' => 'required',
-          'kana' => 'required',
-          'gender' => 'required',
-          'email' => 'required | email',
-          'age' => 'required | digits_between:2,2',
-          'tel' => 'required | digits_between:10,11',
-          'address' => 'required',
-          'job' => 'required',
-        ];
+      return [
+        'username' => 'required',
+        'kana' => 'required',
+        'gender' => 'required',
+        'email' => 'required | email',
+        'age' => 'required | digits_between:2,2',
+        'tel' => 'required | digits_between:10,11',
+        'address' => 'required',
+        'job' => 'required',
+        'rirekisho' => 'file | mimes:pdf',
+        'shokumukeirekisho' => 'file | mimes:pdf',
+      ];
     }
 }
