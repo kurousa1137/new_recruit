@@ -178,6 +178,14 @@ return [
         'shokumukeirekisho' => [
           'mimes' => '添付できるファイルはPDFファイルです',
         ],
+
+        'login_email' => [
+          'required' => 'メールアドレスが入力されていません',
+        ],
+
+        'login_password' => [
+          'required' => 'パスワードが入力されていません',
+        ]
     ],
 
     /*

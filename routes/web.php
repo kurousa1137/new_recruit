@@ -26,13 +26,16 @@ Route::controller(ViewController::class)->group(function(){
   Route::post('/send', 'send')->name('send');
   //ログイン画面
   Route::get('/csadmin', 'login')->name('login');
+  //ログイン処理
+  Route::post('/login-store', 'login_store')->name('login_store');
 });
 
 Route::controller(AdminController::class)->prefix('admin')->group(function(){
   /*-------------------------------------
   管理者のみアクセス可能
   -------------------------------------*/
-
+  //ログアウト処理
+  Route::post('/logout', 'logout')->name('logout');
   //職種一覧画面
   Route::get('/list', 'list')->name('list');
   //新規作成画面

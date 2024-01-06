@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Services\LoginService;
+use App\Services\LogoutService;
 use App\Services\ListService;
 use App\Services\StoreService;
 use App\Services\UpdateService;
@@ -18,6 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+      $this->app->bind('login', LoginService::class);
+      $this->app->bind('logout', LogoutService::class);
       $this->app->bind('store', StoreService::class);
       $this->app->bind('update', UpdateService::class);
       $this->app->bind('index', ListService::class);

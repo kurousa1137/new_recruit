@@ -11,7 +11,7 @@
   <title>@yield('title')</title>
 </head>
 <header>
-  <form action="" method="POST">
+  <form action="{{ route('logout') }}" method="POST">
     @csrf
     <button type="submit" class="logout-btn">ログアウト</button>
   </form>

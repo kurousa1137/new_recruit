@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\EntryRequest;
+use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
 use App\Mail\ShopMail;
 use App\Mail\UserMail;
 
@@ -58,6 +60,18 @@ class ViewController extends Controller
    * ログイン画面
    */
   public function login(){
+    if(Auth::check()){
+      return to_route('list');
+    }
+
     return view('login');
+  }
+
+  /**
+   * @param string $email, $password
+   * ログイン処理
+   */
+  public function login_store(LoginRequest $request){
+    app()->make('login')->login_store($request);
   }
 }

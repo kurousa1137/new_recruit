@@ -55,5 +55,11 @@ class AdminController extends Controller
     app()->make('delete')->delete_data(request('id'));
     return to_route('list');
   }
-  
+
+  /**
+   * ログアウト処理
+   */
+  public function logout(Request $request){
+    app()->make('logout')->logout($request);
+  } 
 }
