@@ -28,6 +28,8 @@ Route::controller(ViewController::class)->group(function(){
   Route::get('/csadmin', 'login')->name('login');
   //ログイン処理
   Route::post('/login-store', 'login_store')->name('login_store');
+  //サンクスページ
+  Route::get('/thanks', 'thanks')->name('thanks');
 });
 
 Route::controller(AdminController::class)->prefix('admin')->middleware('auth')->group(function(){

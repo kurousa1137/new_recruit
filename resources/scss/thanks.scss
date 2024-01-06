@@ -1,0 +1,31 @@
+@use 'common/mixin' as *;
+
+
+.l-main{
+  margin-top: 100px;
+
+  @include sp{
+    margin-top: px(100);
+  }
+
+  h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+
+    @include sp{
+      font-size: px(24);
+    }
+  }
+
+  p{
+    text-align: center;
+    margin-top: 30px;
+    line-height: 1.5;
+
+    @include sp{
+      margin-top: px(30);
+      font-size: px(16);
+    }
+  }
+}
