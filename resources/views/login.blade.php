@@ -16,6 +16,9 @@
       @foreach($errors->all() as $error)
           <p class="error-message">{{ $error }}</p>
       @endforeach
+      @if(session('error-message'))
+        <p class="error-message">{{ session('error-message') }}</p>
+      @endif
     </div>
   </div>
 @endsection

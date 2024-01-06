@@ -30,7 +30,7 @@ Route::controller(ViewController::class)->group(function(){
   Route::post('/login-store', 'login_store')->name('login_store');
 });
 
-Route::controller(AdminController::class)->prefix('admin')->group(function(){
+Route::controller(AdminController::class)->prefix('admin')->middleware('auth')->group(function(){
   /*-------------------------------------
   管理者のみアクセス可能
   -------------------------------------*/
