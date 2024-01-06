@@ -1,0 +1,28 @@
+@use 'common/mixin' as *;
+
+.l-main{
+  margin-top: 100px;
+  p{
+    font-size: 18px;
+    text-align: center;
+  }
+
+   > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background: #333;
+    color: #fff;
+    height: 55px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 30px auto 0;
+    transition: .3s;
+
+    &:hover{
+      opacity: .8;
+      transition: .3s;
+    }
+  }
+}

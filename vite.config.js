@@ -11,6 +11,7 @@ export default defineConfig({
               'resources/scss/detail.scss',
               'resources/scss/form.scss',
               'resources/scss/login.scss',
+              'resources/scss/error.scss',
               'resources/scss/admin/list.scss',
               'resources/scss/admin/create.scss',
               'resources/scss/admin/edit.scss',

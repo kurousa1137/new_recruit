@@ -7,20 +7,22 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Queue\SerializesModels;
 
 class UserMail extends Mailable
 {
     use Queueable, SerializesModels;
+    private $request;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($request)
     {
-        //
+      $this->request = $request;
     }
 
     /**
@@ -31,7 +33,8 @@ class UserMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'User Mail',
+            subject: 'ご応募ありがとうございました',
+            from: new Address('system@csautodealer.com', 'CSオートディーラー')
         );
     }
 
@@ -43,7 +46,10 @@ class UserMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            text: 'mails.user',
+            with: [
+              'request' => $this->request,
+            ],
         );
     }
 

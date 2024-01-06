@@ -47,10 +47,10 @@ class ShopMail extends Mailable
     public function content()
     {
         return new Content(
-            text: 'mails.shops',
+            text: 'mails.shop',
             with: [
               'request' => $this->request,
-            ]
+            ],
         );
     }
 
