@@ -6,7 +6,7 @@ export default defineConfig({
         laravel({
             input: [
               'resources/scss/common/header.scss',
-              'resources/scss/common/fotter.scss',
+              'resources/scss/common/footer.scss',
               'resources/scss/index.scss',
               'resources/scss/detail.scss',
               'resources/scss/form.scss',
