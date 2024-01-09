@@ -8,7 +8,7 @@
   <div class="l-main">
     <div class="main-visual">
       <picture>
-        <source media="(min-width:769px)" srcset=""{{ asset('img/main_visual/webp') }}>
+        <source media="(min-width:769px)" srcset="{{ asset('img/top/main_visual.webp') }}">
         <img src="{{ asset('img/top/main_visual_sp.webp') }}" alt="">
       </picture>
       <div class="ttl-sp">
