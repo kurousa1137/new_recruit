@@ -10,5 +10,5 @@ class ApplicateData extends Model
   use HasFactory;
   protected $connection = 'mysql2';
   protected $table = 'applicate_data';
-  protected $guarded = ['id'];
+  protected $guarded = [];
 }

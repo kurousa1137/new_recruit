@@ -7,7 +7,7 @@
   {
     public function insert_form_data($request){
       DB::transaction(function() use($request){
-        DB::connection('mysql2')->insert([
+        DB::connection('mysql2')->table('applicate_data')->insert([
           'username' => $request->username,
           'age' => $request->age,
           'gender' => $request->gender,
