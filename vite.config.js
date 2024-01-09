@@ -17,6 +17,7 @@ export default defineConfig({
               'resources/scss/admin/list.scss',
               'resources/scss/admin/create.scss',
               'resources/scss/admin/edit.scss',
+              
               'resources/js/form.js',
             ],
             refresh: true,
