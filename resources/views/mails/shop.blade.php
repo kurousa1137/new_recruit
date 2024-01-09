@@ -9,7 +9,9 @@
 メールアドレス：{{ $request->email }}
 年齢：{{ $request->age }}
 電話番号：{{ $request->tel }}
-住所：{{ $request->address }}
+都道府県：{{ $request->pref }}
+市区町村：{{ $request->city }}
+番地：{{ $request->address }}
 希望職種：{{ $request->job }}
 備考：{{ $request->content }}
 ===================================

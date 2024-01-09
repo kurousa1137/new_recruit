@@ -68,9 +68,32 @@
         <p class="error-message">{{ $message }}</p>
       @enderror
       
+      <div class="select-form">
+        <div>
+          <select name="pref">
+            <option value>選択してください</option>
+            @foreach($pref as $list)
+              <option value="{{ $list }}" @selected(old('pref') == $list)>{{ $list }}</option>
+            @endforeach
+          </select>
+        </div>
+        <span class="required">都道府県</span>
+      </div>
+      @error('pref')
+        <p class="error-message">{{ $message }}</p>
+      @enderror
+
+      <div class="text-area">
+        <input type="text" name="city" value="{{ old('city') }}">
+        <span class="required">市区町村</span>
+      </div>
+      @error('city')
+        <p class="error-message">{{ $message }}</p>
+      @enderror
+
       <div class="text-area">
         <input type="text" name="address" value="{{ old('address') }}">
-        <span class="required">住所</span>
+        <span class="required">番地（建物名）</span>
       </div>
       @error('address')
         <p class="error-message">{{ $message }}</p>
@@ -80,12 +103,12 @@
         <div>
           <select name="job">
             <option value>選択してください</option>
-            <option value="カーライフアドバイザー（営業）" @selected(old('job') == 'カーライフアドバイザー（営業）')>カーライフアドバイザー（営業）</option>
+            <option value="営業" @selected(old('job') == '営業')>カーライフアドバイザー（営業）</option>
             <option value="店長候補" @selected(old('job') == '店長候補')>店長候補</option>
-            <option value="自動車整備士" @selected(old('job') == '自動車整備士')>自動車整備士</option>
-            <option value="鈑金塗装工" @selected(old('job') == '鈑金塗装工')>鈑金塗装工</option>
+            <option value="自動車整備" @selected(old('job') == '自動車整備')>自動車整備</option>
+            <option value="鈑金塗装" @selected(old('job') == '鈑金塗装')>鈑金塗装</option>
             <option value="商品管理"@selected(old('job') == '商品管理')>商品管理</option>
-            <option value="洗車・軽作業（アルバイト）"@selected(old('job') == '洗車・軽作業（アルバイト）')>洗車・軽作業（アルバイト）</option>
+            <option value="洗車（A）"@selected(old('job') == '洗車（A）')>洗車・軽作業（アルバイト）</option>
           </select>
         </div>
         <span class="required">希望職種</span>

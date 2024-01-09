@@ -30,6 +30,8 @@ class EntryRequest extends FormRequest
         'email' => 'required | email',
         'age' => 'required | digits_between:2,2',
         'tel' => 'required | digits_between:10,11',
+        'pref' => 'required',
+        'city' => 'required',
         'address' => 'required',
         'job' => 'required',
         'rirekisho' => 'file | mimes:pdf',

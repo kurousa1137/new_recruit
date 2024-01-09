@@ -10,7 +10,7 @@ class Job extends Model
     use HasFactory;
 
     protected $table = 'job';
-    protected $guarded = [];
+    protected $guarded = ['id'];
 
     public function getFlagDataAttribute(){
       switch($this->flag){
