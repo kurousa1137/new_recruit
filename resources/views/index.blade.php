@@ -27,21 +27,21 @@
       <p>創業43年、安心して購入できる中古車を世の中に提供し続けてきました。<br>新たなサービス展開、さらなる会社の基盤強化を目指すために一緒に未来を創る仲間を募集します。</p>
       <div class="slider">
         <ul>
-          <li><img src="{{ asset('img/top/sample01.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample02.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample03.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample04.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample01.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample02.jpg') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img01.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img02.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img03.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img04.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img05.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img06.webp') }}" alt=""></li>
         </ul>
         
         <ul>
-          <li><img src="{{ asset('img/top/sample01.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample02.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample03.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample04.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample01.jpg') }}" alt=""></li>
-          <li><img src="{{ asset('img/top/sample02.jpg') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img01.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img02.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img03.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img04.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img05.webp') }}" alt=""></li>
+          <li><img src="{{ asset('img/top/img06.webp') }}" alt=""></li>
         </ul>
       </div>
     </section>

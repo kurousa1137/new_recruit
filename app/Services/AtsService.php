@@ -20,6 +20,7 @@
           'reception_date' => date('Y-m-d'),
           'rater' => '',
           'assessment' => '-',
+          'created_at' => now(),
         ]);
         DB::commit();
       });

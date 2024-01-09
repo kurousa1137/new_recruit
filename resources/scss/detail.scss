@@ -64,11 +64,14 @@ table{
       padding: 15px 30px;
       width: 150px;
       box-sizing: border-box;
+      vertical-align: top;
+      line-height: 2;
 
       @include sp{
         width: px(100);
         font-size: px(15);
         padding: px(15) 0;
+        
       }
     }
     
