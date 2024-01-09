@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ApplicateData extends Model
 {
   use HasFactory;
-  protected $table = 'ats.applicate_data';
+  protected $connection = 'mysql2';
+  protected $table = 'applicate_data';
   protected $guarded = ['id'];
 }
