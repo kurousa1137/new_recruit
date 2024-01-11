@@ -10,7 +10,6 @@
   flex-direction: column;
 
   @include sp{
-    align-items: flex-start;
     justify-content: center;
     padding-left: px(10);
     height: px(150);
