@@ -88,9 +88,9 @@
             </a>
           </li>
           <li>
-            <a href="{{ route('detail', ['clm01'=>'車両入札']) }}">
-              <img src="{{ asset('img/top/icon07.svg') }}" alt="車両入札">
-              <p>車両入札</p>
+            <a href="{{ route('detail', ['clm01'=>'仕入業務']) }}">
+              <img src="{{ asset('img/top/icon07.svg') }}" alt="仕入業務">
+              <p>仕入業務</p>
             </a>
           </li>
           <li>
