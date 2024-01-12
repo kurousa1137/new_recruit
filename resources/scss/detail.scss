@@ -44,6 +44,12 @@
   }
 }
 
+table,tbody,tr,th,td{
+  @include sp{
+    display: block;
+  }
+}
+
 table{
   width: 1000px;
   margin: 50px auto 0;
@@ -67,9 +73,9 @@ table{
       line-height: 2;
 
       @include sp{
-        width: px(100);
+        width: 100%;
         font-size: px(15);
-        padding: px(15) 0;
+        padding: px(15) 0 0;
         
       }
     }
@@ -82,9 +88,9 @@ table{
       font-size: 15px;
       
       @include sp{
-        width: px(256);
+        width: 100%;
         font-size: px(14);
-        padding: px(15) 0;
+        padding: 0 0 px(15);
       }
     }
 
