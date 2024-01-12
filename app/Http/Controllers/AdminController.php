@@ -35,8 +35,8 @@ class AdminController extends Controller
    * @return view
    * 記事編集画面
    */
-  public function edit($id){
-    $data = app()->make('detail')->get_job_data($id);
+  public function edit(Request $request){
+    $data = app()->make('detail')->get_job_data($request);
     return view('admin.edit', compact('data'));
   }
 

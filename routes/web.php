@@ -19,7 +19,7 @@ Route::controller(ViewController::class)->group(function(){
   //トップページ
   Route::get('/', 'home')->name('home');
   //職種詳細
-  Route::get('/detail/{id}', 'detail')->name('detail');
+  Route::get('/detail', 'detail')->name('detail');
   //エントリーフォーム
   Route::get('/form', 'form')->name('form');
   //エントリーフォーム送信処理
@@ -45,7 +45,7 @@ Route::controller(AdminController::class)->prefix('admin')->middleware('auth')->
   //新規作成処理
   Route::post('/store', 'store')->name('store');
   //記事編集画面
-  Route::get('/edit/{id}', 'edit')->name('edit');
+  Route::get('/edit', 'edit')->name('edit');
   //記事更新処理画面
   Route::post('/update', 'update')->name('update');
   //記事削除処理

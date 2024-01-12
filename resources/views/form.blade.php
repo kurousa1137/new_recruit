@@ -107,7 +107,10 @@
             <option value="店長候補" @selected(old('job') == '店長候補')>店長候補</option>
             <option value="自動車整備" @selected(old('job') == '自動車整備')>自動車整備</option>
             <option value="鈑金塗装" @selected(old('job') == '鈑金塗装')>鈑金塗装</option>
+            <option value="コーティング" @selected(old('job') == 'コーティング')>コーティング</option>
             <option value="商品管理"@selected(old('job') == '商品管理')>商品管理</option>
+            <option value="一般事務"@selected(old('job') == '一般事務')>一般事務</option>
+            <option value="応札・軽作業（A）"@selected(old('job') == '応札・軽作業（A）')>車両入札（アルバイト）</option>
             <option value="洗車（A）"@selected(old('job') == '洗車（A）')>洗車・軽作業（アルバイト）</option>
           </select>
         </div>

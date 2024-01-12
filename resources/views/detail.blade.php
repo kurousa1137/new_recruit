@@ -15,10 +15,12 @@
         <th>仕事内容</th>
         <td>{!! nl2br($data->clm02) !!}</td>
       </tr>
-      <tr>
-        <th>仕事の流れ</th>
-        <td>{!! nl2br($data->clm03) !!}</td>
-      </tr>
+      @if(isset($data->clm03))
+        <tr>
+          <th>仕事の流れ</th>
+          <td>{!! nl2br($data->clm03) !!}</td>
+        </tr>
+      @endif
       <tr>
         <th>応募条件</th>
         <td>{!! nl2br($data->clm04) !!}</td>

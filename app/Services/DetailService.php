@@ -4,8 +4,8 @@
 
   class DetailService
   {
-    public function get_job_data($id){
-      return Job::where('id', $id)->first();
+    public function get_job_data($request){
+      return Job::where('clm01', $request->clm01)->first();
     }
   }
 
