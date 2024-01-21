@@ -11,5 +11,9 @@
         "postcss": "^8.1.14",
         "sass": "^1.69.6",
         "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "@fullcalendar/core": "^6.1.10",
+        "@fullcalendar/daygrid": "^6.1.10"
     }
 }

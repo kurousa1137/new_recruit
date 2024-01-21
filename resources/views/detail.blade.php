@@ -50,6 +50,10 @@
         <td>{!! nl2br($data->clm10) !!}</td>
       </tr>
     </table>
+    <div class="contact_area">
+      <p>お電話での受付</p>
+      <a href="tel:0487496672">048-749-6672</a>
+    </div>
     <a href="{{ route('form') }}" class="entry-btn">ENTRY</a>
   </div>
 @endsection

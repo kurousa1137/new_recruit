@@ -100,6 +100,40 @@ table{
   }
 }
 
+.contact_area{
+  width: 1000px;
+  margin: 50px auto 0;
+
+  @include sp{
+    width: 95%;
+    margin-top: px(50);
+  }
+
+  p{
+    text-align: center;
+
+    @include sp{
+      font-size: px(16);
+    }
+  }
+
+  a{
+    color: #e60000;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    pointer-events: none;
+
+    @include sp{
+      font-size: px(32);
+      pointer-events: inherit;
+    }
+  }
+}
+
 .entry-btn{
   display: flex;
   align-items: center;
