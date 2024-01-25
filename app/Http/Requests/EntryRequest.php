@@ -32,7 +32,6 @@ class EntryRequest extends FormRequest
         'tel' => 'required | digits_between:10,11',
         'pref' => 'required',
         'city' => 'required',
-        'address' => 'required',
         'job' => 'required',
         'rirekisho' => 'file | mimes:pdf',
         'shokumukeirekisho' => 'file | mimes:pdf',

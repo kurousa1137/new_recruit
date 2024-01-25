@@ -93,7 +93,7 @@
 
       <div class="text-area">
         <input type="text" name="address" value="{{ old('address') }}">
-        <span class="required">番地（建物名）</span>
+        <span>番地（建物名）</span>
       </div>
       @error('address')
         <p class="error-message">{{ $message }}</p>
