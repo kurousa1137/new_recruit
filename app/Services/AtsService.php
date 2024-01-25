@@ -20,6 +20,8 @@
           'reception_date' => date('Y-m-d'),
           'rater' => '',
           'assessment' => '-',
+          'rirekisho_path' => '',
+          'shokumukeirekisho_path' => '',
           'created_at' => now(),
         ]);
         DB::commit();
