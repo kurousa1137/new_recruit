@@ -9,6 +9,7 @@
       DB::transaction(function() use($request){
         DB::connection('mysql2')->table('applicate_data')->insert([
           'username' => $request->username,
+          'furigana' => $request->kana,
           'age' => $request->age,
           'gender' => $request->gender,
           'tel' => $request->tel,
