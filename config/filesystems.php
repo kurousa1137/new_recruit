@@ -36,6 +36,20 @@ return [
             'throw' => false,
         ],
 
+        'rirekisho' => [
+            'driver' => 'local',
+            // 'root' => '/applications/mamp/htdocs/ats/storage/app/public/rirekisho/',
+            'root' => '/home/xs799949/csautodealer.com/ats/storage/app/public/rirekisho/',
+            'throw' => false,
+          ],
+          
+          'shokumukeirekisho' => [
+            'driver' => 'local',
+            // 'root' => '/applications/mamp/htdocs/ats/storage/app/public/shokumukeirekisho/',
+            'root' => '/home/xs799949/csautodealer.com/ats/storage/app/public/shokumukeirekisho',
+            'throw' => false,
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
