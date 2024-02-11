@@ -94,13 +94,13 @@
             </a>
           </li>
           <li>
-            <a href="{{ route('detail', ['id'=>8]) }}">
+            <a href="{{ route('detail', ['id'=>9]) }}">
               <img src="{{ asset('img/top/icon08.svg') }}" alt="一般事務">
               <p>一般事務</p>
             </a>
           </li>
           <li>
-            <a href="{{ route('detail', ['id'=>9]) }}">
+            <a href="{{ route('detail', ['id'=>8]) }}">
               <img src="{{ asset('img/top/icon09.svg') }}" alt="コーティング">
               <p>コーティング</p>
             </a>
