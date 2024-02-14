@@ -17,7 +17,7 @@
         </tr>
         @foreach($data as $list)
         <tr>
-          <td><a href="{{ route('edit', ['clm01'=>$list->clm01]) }}">{{ $list->clm01 }}</a></td>
+          <td><a href="{{ route('edit', ['id'=>$list->id] ) }}">{{ $list->clm01 }}</a></td>
           <td>{{ $list->FlagData }}</td>
           <td>
             <form action="{{ route('delete', ['id'=>$list->id]) }}" method="POST">
