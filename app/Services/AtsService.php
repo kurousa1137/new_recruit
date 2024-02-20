@@ -35,6 +35,7 @@
           'reception_date' => date('Y-m-d'),
           'rater' => '',
           'assessment' => '-',
+          'accepted' => '-',
           'rirekisho_path' => $rirekisho_path,
           'shokumukeirekisho_path' => $shokumukeirekisho_path,
           'created_at' => now(),
