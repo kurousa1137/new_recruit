@@ -35,7 +35,7 @@ class ShopMail extends Mailable
     {
         return new Envelope(
             subject: 'リクルートサイトから応募がありました',
-            from: new Address('system@csauto.jp', 'CSオートディーラー')
+            from: new Address('system@csautodealer.com', 'CSオートディーラー')
         );
     }
 
