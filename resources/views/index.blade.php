@@ -52,7 +52,7 @@
         <p>CSオートディーラーでは営業職から<br>専門職までさまざまな職種を募集しています</p>
         <ul>
           <li>
-            <a href="{{ route('detail', ['id'=>1]) }}">
+            <a href="https://job-sales.csautodealer.com">
               <img src="{{ asset('img/top/icon01.svg') }}" alt="営業">
               <p>営業</p>
             </a>
@@ -64,7 +64,7 @@
             </a>
           </li>
           <li>
-            <a href="{{ route('detail', ['id'=>3]) }}">
+            <a href="https://job-mechanic.csautodealer.com/">
               <img src="{{ asset('img/top/icon03.svg') }}" alt="車両整備">
               <p>自動車整備</p>
             </a>
